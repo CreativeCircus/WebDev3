@@ -57,7 +57,7 @@
 					</section>
 					<section>
 						<h2>A Cool Thing</h2>
-						<p><a href="https://twitter.com/kawashima_san/status/1103148512726806529">Hands</a></p>
+						<p><a href="http://www.because-recollection.com">Because Recollection</a></p>
 					</section>
 				</section>
 				
@@ -75,14 +75,14 @@
 					
 					<section>
 						<h2>Syllabus</h2>
-						<a href="https://docs.google.com/document/d/1qWLou7L0t3-JcyhztxIgqM1wtYGN-lx7heGteW5EA-E/edit">Google Doc</a>
+						<a href="https://docs.google.com/document/d/1SMifOc4Y_4X3itzPNbNTP8ZI1Xjby38_939wh4fYHo8/edit?usp=sharing">Google Doc</a>
 					</section>
 
 					<section>
 						<h2>Important points</h2>
 						<ul>
 							<li>Homework is due one minute before class starts.</li>
-							<li>Homework will be submitted through Github.</li>
+							<li>Upload homework to Github, post link on Ringmaster.</li>
 							<li>You should have code to look at at every class.</li>
 							<li>If I can't see results, I at least want to see progress.</li>
 						</ul>
@@ -92,10 +92,6 @@
 				<section>
 					<h1>Week 1</h1>
 					<h3>Git</h3>
-				</section>
-
-				<section>
-					<h1>Git. For. Every. Project.</h1>
 				</section>
 
 				<section>
@@ -117,15 +113,26 @@ CMD + SHIFT + .
 					
 				</section>
 
-
 				<section>
 					<section>
 						<h2>The System</h2>
 						<p>Git is a version control system.</p>
+					</section>
+					<section>
+						<p>Maintains history of a project, so no work gets lost.</p>
+					</section>
+					<section>
 						<p>Can be used without a website or app.</p>
-						<p>What I mean when I just refer to 'git'.</p>
+					</section>
+					<section>
 						<p>There are different ways to <a href="https://twitter.com/cthydng/status/575483540202106880">visualize it.</a></p>
 					</section>
+					<section>
+						<h1>Git. For. Every. Project.</h1>
+					</section>
+				</section>
+
+				<section>
 					<section>
 						<p>Starting a Git repository without Github:</p>
 						<ol>
@@ -138,10 +145,17 @@ CMD + SHIFT + .
 						<p>You can use Terminal commands from here, With commands like: <pre>git status</pre><pre>git add -A</pre><pre>git commit -m "Initial Commit!"</pre></p>
 					</section>
 					<section>
+						<p>Terminal command structure</p>
+						<pre><code>
+
+command  option  option  argument
+git      commit  -m      "initial commit"
+						</code></pre>
+					</section>
+					<section>
 						<p>You can also just drag into Github Desktop</p>
 					</section>
 				</section>
-
 
 				<section>
 					<section>
@@ -158,6 +172,9 @@ CMD + SHIFT + .
 						<p>Prevents certain files and folders (like node-modules) from being added to the repo.</p>
 						<p>Right click on files in Github Desktop and click 'ignore'.</p>
 						<p>Can edit this directly.</p>
+					</section>
+					<section>
+						<h1>Never commit node_modules</h1>
 					</section>
 				</section>
 
@@ -176,16 +193,14 @@ CMD + SHIFT + .
 						<h2>Other Clients</h2>
 						<ul>
 							<li><a href="https://www.sourcetreeapp.com/">SourceTree</a> - Works with Bitbucket, good merge tools.</li>
-							<li><a href="https://github.com/git-up/GitUp">Git Up</a> - Great visualizer, undo commands.</li>
-							<li>Paid apps like <a href="https://www.git-tower.com/mac/">Tower</a> and <a href="https://www.gitkraken.com/">Git Kraken</a></li>
+							<li><a href="https://code.visualstudio.com/docs/editor/versioncontrol">VS Code</a></li>
 						</ul>
 					</section>
 					<section>
 						<p>Use what you're comfortable with.</p>
-						<p>I like Github Desktop for general use, SourceTree for resolving conflicts, and the command line for any really weird stuff.</p>
+						<p>I use SourceTree for 95% of by git use, and the command line for any really weird stuff.</p>
 					</section>
 				</section>
-
 
 				<section>
 					<section>
@@ -210,12 +225,22 @@ CMD + SHIFT + .
 					<section>
 						<h2>Starting a repository</h2>
 						<p>And connecting it to github.com</p>
+						<p>Reference these slides as you need to.</p>
+					</section>
+					<section>
+						<h2>General Steps</h2>
+						<ol>
+							<li>Drag folder to Github Desktop</li>
+							<li>Publish</li>
+						</ol>
+					</section>
+					<section>
+						<p>More specific</p>
 						<ul>
-							<li>Starting completely fresh</li>
+							<li>No Project, No Repo</li>
 							<li>Project but no Repo</li>
 							<li>Project and Repo, not connected</li>
 						</ul>
-						<p>Reference these slides as you need to.</p>
 					</section>
 				</section>
 
@@ -226,11 +251,20 @@ CMD + SHIFT + .
 					</section>
 					<section>
 						<ol>
+							<li>Create a folder in Finder</li>
+							<li>Drag folder onto Github Desktop</li>
+							<li>Click "create repository"</li>
+							<li>Add files, Publish</li>
+						</ol>
+						<p>That's it. Start adding project files.</p>
+					</section>
+					<section>
+						<p>Alternately...</p>
+						<ol>
 							<li>Go to Github.com</li>
 							<li>Create a new repository</li>
 							<li>Hit 'Clone in Desktop'</li>
 						</ol>
-						<p>That's it. Start adding project files.</p>
 					</section>
 				</section>
 
@@ -241,9 +275,7 @@ CMD + SHIFT + .
 					</section>
 					<section>
 						<ol>
-							<li><pre>cd path/to/your/project</pre></li>
-							<li><pre>git init</pre></li>
-							<li>drag project folder into Github Desktop</li>
+							<li>Drag project folder into Github Desktop</li>
 							<li>Hit 'Publish'</li>
 						</ol>
 						<p>This will create a repository on github.com</p>
@@ -253,16 +285,16 @@ CMD + SHIFT + .
 				<section>
 					<section>
 						<h2>Project and Repo</h2>
-						<p>Or how to add an existing project to an existing repo</p>
+						<p>Or how to add an existing project to an existing repo.</p>
+						<p>(Usually you will not want to do this)</p>
 					</section>
 					<section>
 						<ol>
-							<li><pre>cd path/to/your/project</pre></li>
-							<li><pre>git init</pre></li>
-							<li><pre>git remote add https://github.com/username/reponame.git</pre></li>
-							<li>drag project folder into Github Desktop</li>
+							<li>Clone repository into new folder</li>
+							<li>Drag files from existing project (not .git)</li>
+							<li>Commit</li>
 						</ol>
-						<p>This will link your local project with your remote repo.</p>
+						<p>Essentially copying your project into a repository folder.</p>
 					</section>
 				</section>
 
@@ -284,6 +316,8 @@ git clone https://github.com/CyanLetter/WebDev3_Spring2018
 						<h2>Committing</h2>
 						<p>Save a particular set of changes in your local copy. Does not affect the remote yet.</p>
 						<p>Commit early, commit often.</p>
+						<p>Commit before the end of the day.</p>
+						<p>There is no such thing as too many commits.</p>
 						<pre>
 git add [files to add]
 
@@ -306,6 +340,10 @@ git pull
 git push origin master
 						</pre>
 					</section>
+					<section>
+						<h2>Keeping up-to-date</h2>
+						<p>When you sync, you can see how many commits your local copy is behind or ahead of the remote.</p>
+					</section>
 				</section>
 
 				<section>
@@ -320,20 +358,26 @@ git push origin master
 						<p>In the app, right click on a file and select Discard Changes, or Discard All</p>
 					</section>
 					<section>
-						<h2>Reverting a specific commit</h2>
-						<p>In the app, you can:</p>
+						Opening a specific file
 						<ul>
-							<li>Right click on a commit in 'History' and select Revert</li>
+							<li>Select a commit</li>
+							<li>Right click on a file and select "open"</li>
+							<li>Copy and paste as necessary</li>
 						</ul>
-						<p>Best to do for only your most recent commit, to avoid merge conflicts.</p>
 					</section>
 					<section>
 						<h2>Going back to previous commits</h2>
 						<p>Lots of dangerous ways to do this that rewrite history.</p>
-						<p>Cannot be done entirely in Github Desktop</p>
+						<p>The command line is simplest</p>
 					</section>
 					<section>
-						<p>In the history tab, right click the commit you want to return to and select 'Copy SHA'</p>
+						<h2>The Undo button</h2>
+						<p>DANGER</p>
+						<p>REWRITES HISTORY</p>
+						<p>DANGER</p>
+					</section>
+					<section>
+						<p>In the history tab, right click the commit you want to undo and select 'Copy SHA'</p>
 						<p>In Terminal:</p>
 						<pre>
 git revert --no-commit 0766c053..HEAD
@@ -363,34 +407,24 @@ git revert --no-commit 0766c053..HEAD
 
 				<section>
 					<section>
-						<h2>Pull Requests</h2>
-						<p>Setting up a merge so that it can be reviewed.</p>
-						<p>Always make a request to merge your current branch into the target branch.</p>
-						<p><a href="https://help.github.com/articles/creating-a-pull-request/#changing-the-branch-range-and-destination-repository">About pull requests</a></p>
+						<h2>Merging</h2>
+						<p>Connecting the timelines.</p>
 					</section>
 					<section>
-						<h2>From Desktop</h2>
+						<p>When you're finished with a branch...</p>
 						<ul>
-							<li>Make sure you're in the right branch</li>
-							<li>Hit the Pull Request button</li>
-							<li>Add a description, send it.</li>
-							<li>Review and accept on github.</li>
-						</ul>
-					</section>
-					<section>
-						<h2>From the Web</h2>
-						<ul>
-							<li>Make sure you're in the right branch</li>
-							<li>Hit the New Pull Request button</li>
-							<li>Add description, this sould all be familiar</li>
+							<li>Switch to the branch you want to merge into (e.g. master)</li>
+							<li>Go to Branch > Merge Into Current Branch</li>
+							<li>Pick the branch you want to merge</li>
+							<li>Resolve conflicts, commit</li>
 						</ul>
 					</section>
 				</section>
 
 				<section>
 					<section>
-						<h2>Merging and Conflicts</h2>
-						<p>Two people changed the same thing. How fix?</p>
+						<h2>Conflicts</h2>
+						<p>Two people changed the same thing! How do you fix it?</p>
 						<p><a href="https://help.github.com/articles/resolving-a-merge-conflict-on-github/">About merge conflicts</a></p>
 					</section>
 					<section>
@@ -406,31 +440,61 @@ Stuff from the server (REMOTE)
 						</pre>
 					</section>
 					<section>
-						<p>Use a text editor for local conflicts.</p>
-						<p>Github has a web editor for resolving pull request conflicts.</p>
+						<h2>Merge Tools</h2>
+						<p>Built-in</p>
+						<ul>
+							<li>Sourcetree</li>
+							<li>VS Code</li>
+						</ul>
+
+						<p>Dedicated</p>
+						<ul>
+							<li>Meld</li>
+							<li>kDiff</li>
+						</ul>
 					</section>
 				</section>
 
 				<section>
 					<section>
 						<h2>Forking</h2>
-						<p>Making a copy for yourself to edit.</p>
-						<p>This is how open source projects accept changes from outsiders.</p>
+						<p>Duplicating someone else's repo for yourself to edit.</p>
 					</section>
 					<section>
 						<h2>The fork button</h2>
 						<p>On github. Creates a copy of the project that you own.</p>
+						<p>You can pull updates from the original project.</p>
 					</section>
-					<section>
-						<h2>Keeping up-to-date</h2>
-						<p>When you sync, you can see how many commits you are behind the original repo.</p>
-						<p>In the app, you can update from the original.</p>
-					</section>
+				</section>
+
+				<section>
 					<section>
 						<h2>Pull requests</h2>
-						<p>You can request to merge your changes back into the original repo.</p>
+						<p>A request to merge your changes back into the original repo.</p>
 						<p>Best to do this from a branch.</p>
 						<p>This is how people fix bugs and add features in open source projects.</p>
+					</section>
+					<section>
+						<p>Setting up a merge so that it can be reviewed.</p>
+						<p>Always make a request to merge your current branch into the target branch.</p>
+						<p><a href="https://help.github.com/articles/creating-a-pull-request/#changing-the-branch-range-and-destination-repository">About pull requests</a></p>
+					</section>
+					<section>
+						<h2>From Desktop</h2>
+						<ul>
+							<li>Make sure you're in the right branch</li>
+							<li>Hit the Pull Request button</li>
+							<li>Add a description, send it.</li>
+							<li>Owner can review and accept on github.</li>
+						</ul>
+					</section>
+					<section>
+						<h2>From the Web</h2>
+						<ul>
+							<li>Make sure you're in the right branch</li>
+							<li>Hit the New Pull Request button</li>
+							<li>Add description, this sould all be familiar</li>
+						</ul>
 					</section>
 				</section>
 
