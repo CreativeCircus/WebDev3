@@ -1,0 +1,13 @@
+Expand upon the product page you made in week 2.
+
+You must add or alter content to demonstrate what we learned about transitions and backgrounds. At minumum:
+
+- Use a background image in a creative way. The simplest routes to go would be layering multiple background images or using blend modes to tint one. Take a shot at using a property you haven't used before.
+
+- Use CSS transitions to create an animation sequence that reveals / hides some of your page's content. You should use a hover state or class name change to trigger transitions on multiple elements. This can be anything from a nav bar expanding, to complex decorative effects or revealing more text when hovering over each card. Also note that this means no CSS keyframe animations, and no javascript animation. This is intended to demonstrate that you have a solid control over the transition properties.
+
+- Add some svg icons, whether they are social media icons or others used to enhance your card designs. Look to FontAwesome for sourcing some generic and well-optimized icons.
+
+Make sure to create a new branch for your changes here, something like
+
+As usual, submit a link to your github repo.
