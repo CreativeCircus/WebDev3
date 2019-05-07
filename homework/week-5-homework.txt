@@ -1,0 +1,25 @@
+Kickstarter is full of products of questionable usefulness. You’re going to do some market research, by creating a survey asking for feedback on a product’s features and desirability.
+
+Pick a product on Kickstarter and create a simple survey form for said product. The page should include:
+
+- A title
+- An image of your product with an appropriate alt tag
+- A link to the Kickstarter page
+- A form with questions
+
+The Form should include:
+
+- A Name field
+- An Email field
+- At least one set of radio buttons
+- At least one checkbox
+- At least one expandable text area
+- At least one non-label element that describes one of these fields
+
+All inputs should have an associated label. 
+
+The entire site should be navigable with keyboard only, and each field should be clearly described when read by a screen reader.
+
+Your site must have no warnings or errors using accessibility validation chrome extension that we looked at in class.
+
+As usual, make a git repository and submit through Ringmaster.
